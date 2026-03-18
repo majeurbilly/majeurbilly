@@ -1,0 +1,56 @@
+{
+  "ui.lang.fr": "FR",
+  "ui.lang.en": "EN",
+  
+  "page.h1": "Curriculum Vitae",
+  "page.title": "Billy - Curriculum Vitae",
+  
+  "aboutme.title": "À propos de moi",
+  "aboutme.location": "Duberger, Québec",
+  "aboutme.email.label": "Courriel",
+  "aboutme.email.revealText": "activez JavaScript pour voir l'adresse courriel",
+  "aboutme.github.label": "GitHub",
+  "aboutme.github.urlText": "github.com/majeurbilly",
+  "aboutme.website.label": "Site web",
+  "aboutme.website.urlText": "majeurbilly.github.io",
+  "aboutme.photo.alt": "Photo de Billy",
+  
+  "education.title": "Formation",
+  "education.item1.date": "08/2024 - Présent",
+  "education.item1.school": "Cégep de Sainte-Foy",
+  "education.item1.location": ", Québec, Canada",
+  "education.item1.degree.prefix": "AEC (",
+  "education.item1.degree.value": "Programmation, bases de données et serveurs",
+  "education.item1.degree.suffix": ")",
+
+  "experience.title": "Expérience",
+
+  "skills.title": "Compétences",
+  "skills.languages.title": "Langues",
+  "skills.languages.fr_native": "Français (maternelle)",
+  "skills.languages.en_fluent": "Anglais (intermédiaire)",
+  
+  "skills.technologies.title": "Technologies",
+  "skills.advanced.label": "Bases de données :",
+  "skills.advanced.tech.sql": "SQL",
+  "skills.intermediate.label": "Infrastructures & DevOps :",
+  "skills.intermediate.tech.linux": "Linux",
+  "skills.intermediate.tech.devops": "DevOps",
+  "skills.intermediate.tech.networking": "Réseautique",
+  "skills.basic.label": "Outils :",
+  "skills.basic.tech.ha": "Home Assistant",
+  
+  "activities.title": "Projets & Activités",
+  "activities.item1.year": "2026",
+  "activities.project.name": "Meteor",
+  "activities.project.createdRest1": " a été développé dans le cadre du cours ",
+  "activities.project.createdRest2": " (Tp3 Amoc).",
+  
+  "activities.item2.year": "2025",
+  "activities.hackathon.line1.prefix": "Participant au ",
+  "activities.hackathon.name": "Hackathon 2025",
+  "activities.hackathon.line1.suffix": " organisé par ",
+  "activities.hackathon.organizer": "Québec International",
+  "activities.hackathon.line1.end": ".",
+  "activities.repo.line3.text": "Repo du projet"
+}

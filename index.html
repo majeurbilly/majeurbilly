@@ -1,149 +1,166 @@
-<!DOCTYPE html><html lang="en"><head>
-        <title>Billy Hallé - Curriculum Vitae</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/cv.css">
-        <link rel="stylesheet" href="assets/cv.screen.css" media="screen">
-        <link rel="stylesheet" href="assets/cv.print.css" media="print">
-        <link rel="stylesheet" href="assets/cv.en.css">
-        <link rel="stylesheet" href="vendor/font-awesome/4.7.0/css/font-awesome.css">
-    </head>
-    <body class="dark">
-        <canvas></canvas>
-        <header>
-            <!--
-            <div id="toggles">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billy - Curriculum Vitae</title>
+    <link rel="stylesheet" href="assets/cv.css">
+    <link rel="stylesheet" href="assets/cv.screen.css" media="screen">
+    <link rel="stylesheet" href="assets/cv.print.css" media="print">
+    <link rel="stylesheet" href="vendor/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body class="dark">
+    <canvas></canvas>
+    <header class="header-cv">
+        <h1 data-i18n="page.h1">Curriculum Vitae</h1>
+
+        <nav id="lang-switcher" class="controls no-print" aria-label="Contrôles du site">
+            <button type="button" data-lang="fr" data-i18n="ui.lang.fr">FR</button>
+            <span aria-hidden="true"> | </span>
+            <button type="button" data-lang="en" data-i18n="ui.lang.en">EN</button>
+            <span aria-hidden="true"> | </span>
+            <button type="button" onclick="window.print()">🖨️</button>
+        </nav>
+    </header>
+    <main>
+        <section id="aboutme">
+            <h2 data-i18n="aboutme.title">About Me</h2>
+            <div>
                 <div>
-                    <input type="checkbox" id="darkmode">
-                    <label for="darkmode">Dark mode</label>
+                    <address>
+                        <div>Billy Hallé</div>
+                        <div data-i18n="aboutme.location">Duberger, Quebec</div>
+                    </address>
+                    <div>
+                        <div>
+                            <div data-i18n="aboutme.email.label">E-Mail</div>
+                            <div><a href="#" class="email" data-i18n="aboutme.email.revealText">enable JavaScript to see the E-Mail address</a></div>
+                        </div>
+                        <div>
+                            <div data-i18n="aboutme.github.label">GitHub</div>
+                            <div><a href="https://github.com/majeurbilly" data-i18n="aboutme.github.urlText">github.com/majeurbilly</a></div>
+                        </div>
+                        <div>
+                            <div data-i18n="aboutme.website.label">Website</div>
+                            <div><a href="https://majeurbilly.github.io/" data-i18n="aboutme.website.urlText">majeurbilly.github.io</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/image.jpg" alt="Photo of Billy" data-i18n-alt="aboutme.photo.alt">
                 </div>
             </div>
-            -->
-            <h1>Curriculum Vitae</h1>
-        </header>
-        <main>
-            <section id="aboutme">
-                <h2>About Me</h2>
+        </section>
+        <section id="education" class="timeline">
+            <h2 data-i18n="education.title">Education</h2>
+            <div>
+                <div data-i18n="education.item1.date">08/2024 - Present</div>
+                <div>
+                    <div><strong data-i18n="education.item1.school">Cégep de Sainte-Foy</strong><span data-i18n="education.item1.location">, Quebec City, Canada</span></div>
+                    <div><span data-i18n="education.item1.degree.prefix">AEC (</span><em data-i18n="education.item1.degree.value">Programming, Databases and Servers</em><span data-i18n="education.item1.degree.suffix">)</span></div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="timeline">
+            <h2 data-i18n="experience.title">Experience</h2>
+            <!-- future content -->
+        </section>
+        <section id="skills" class="timeline">
+            <h2 data-i18n="skills.title">Skills</h2>
+            <div>
+                <div data-i18n="skills.languages.title">Languages</div>
+                <div>
+                    <ul>
+                        <li data-i18n="skills.languages.fr_native">French (native)</li>
+                        <li data-i18n="skills.languages.en_fluent">English (intermediate)</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div data-i18n="skills.technologies.title">Technologies</div>
                 <div>
                     <div>
-                        <address>
-                            <div>Billy Hallé</div>
-                            <div>Quebec</div>
-                        </address>
-                        <div>
-                            <div>
-                                <div>E-Mail</div>
-                                <div><a href="#" class="email">enable JavaScript to see the E-Mail address</a></div>
-                            </div>
-                            <div>
-                                <div>Github</div>
-                                <div><a href="https://github.com/majeurbilly">github.com/majeurbilly</a></div>
-                            </div>
-                            <div>
-                                <div>Website</div>
-                                <div><a href="https://majeurbilly.github.io/">majeurbilly.github</a></div>
-                            </div>
-                        </div>
+                        <div data-i18n="skills.advanced.label">Databases:</div>
+                        <div><em data-i18n="skills.advanced.tech.sql">SQL</em></div>
                     </div>
                     <div>
-                        <img src="assets/image.jpg" alt="Image of Billy Halle">
+                        <div data-i18n="skills.intermediate.label">Infrastructure & DevOps:</div>
+                        <div><em data-i18n="skills.intermediate.tech.linux">Linux</em>, <em data-i18n="skills.intermediate.tech.devops">DevOps</em>, <em data-i18n="skills.intermediate.tech.networking">Networking</em></div>
                     </div>
-                </div>
-            </section>
-            <section id="education" class="timeline">
-                <h2>Education</h2>
-                <div>
-                    <div>09/2006 - 06/2012</div>
-                    <div><strong>St. Alber-le-Grand</strong>, Quebec city, Canada</div>
-                </div>
-                <div>
-                    <div>09/2012 - 06/2017</div>
-                    <div><strong>De Rochebelle High School</strong>, Quebec city, Canada</div>
-                </div>
-                <div>
-                    <div>08/2024 - at today</div>
                     <div>
-                        <div><strong>Cegep st-foy</strong>, Quebec city, Canada</div>
-                        <div>Degree: Attestation of College Studies (AEC) (<em>2.5</em>)</div>
+                        <div data-i18n="skills.basic.label">Tools:</div>
+                        <div><em data-i18n="skills.basic.tech.ha">Home Assistant</em></div>
                     </div>
                 </div>
-            </section>
-            <section id="experience" class="timeline">
-                <h2>Experience</h2>
-                <!--
+            </div>
+        </section>
+        <section id="activities" class="timeline">
+            <h2 data-i18n="activities.title">Projects & Activities</h2>
+            <div>
+                <div data-i18n="activities.item1.year">2026</div>
                 <div>
-                    <div>09/2012</div>
                     <div>
-                        <div><em>job</em> at <strong>place</strong></div>
-                        <aside>Quebec city, Canada</aside>
-                        <div>Implementing and customizing websites based on customer requirements.</div>
-                        <div>Technologies: <em>PHP</em></div>
+                        <q data-i18n="activities.project.name">Meteor</q>
+                        <span data-i18n="activities.project.createdRest1"> was developed as part of the </span>
+                        <em>Tp3 Amoc</em>
+                        <span data-i18n="activities.project.createdRest2"> course (Tp3 Amoc).</span>
                     </div>
                 </div>
-                -->
-            </section>
-            <section id="skills" class="timeline">
-                <h2>Skills</h2>
+            </div>
+            <div>
+                <div data-i18n="activities.item2.year">2025</div>
                 <div>
-                    <div>Languages</div>
                     <div>
-                        <ul>
-                            <li>French (native)</li>
-                            <li>English (fluent)</li>
-                        </ul>
+                        <span data-i18n="activities.hackathon.line1.prefix">Participant in the </span>
+                        <q data-i18n="activities.hackathon.name">Hackathon 2025</q>
+                        <span data-i18n="activities.hackathon.line1.suffix"> organized by </span>
+                        <a href="https://www.quebecinternational.ca/" data-i18n="activities.hackathon.organizer">Quebec International</a>
+                        <span data-i18n="activities.hackathon.line1.end">.</span>
+                    </div>
+                    <div>
+                        (<a href="https://github.com/majeurbilly/vermac-project-hackathon-2025" data-i18n="activities.repo.line3.text">Repo for this project</a>)
                     </div>
                 </div>
-                <div>
-                    <div>Technologies</div>
-                    <div>
-                        <div>
-                            <div>Advanced:</div>
-                            <div><em>C#</em>, <em>SQL</em>, <em>Git</em>, <em>Python</em>, <em>JavaScript</em></div>
-                        </div>
-                        <div>
-                            <div>Intermediate:</div>
-                            <div><em>Linux</em>, <em>PromQL</em>, <em>C++</em>, <em>Rust</em>, <em>PHP</em>, <em>Go</em>, <em>Docker</em></div>
-                        </div>
-                        <div>
-                            <div>Basic:</div>
-                            <div><em>IT Security</em>, <em>Android</em>, <em>Network Programming</em>, <em>Parallel Programming</em>, <em>Packet Tracer</em></div>
-                        </div>
-                        <p>
-                            <small>These lists are intentionally coarse and might be wildly outdated or incomplete. Feel free to ask for specifics.</small>
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>Open Source</div>
-                    <div>
-                        <p>Active collaboration with various open source projects ranging from software libraries to Linux distributions on various social coding platforms, mailing lists and IRC networks.</p>
-                        <p>Many smaller self-built software components are openly released, some of which have users world wide.</p>
-                    </div>
-                </div>
-                <div>
-                    <div>Consulting</div>
-                    <div>
-                        <p>
-                            Various projects involved requirements engineering and consulting services with international customers, ranging from passive troubleshooting support over systems architecture consulting to implementation workshops.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="activities" class="timeline">
-                <h2>Activities</h2>
-                <div>
-                    <div>2025</div>
-                    <div>
-                        <div>Hackathon 1er edition at Quebec International</div>
-                        <div>(see <a href="https://www.quebecinternational.ca/">Quebec International</a>)</div>
-                        <div>(see <a href="https://github.com/majeurbilly/vermac-project-hackathon-2025">Repo for this project</a>)</div>
-                        <div>Ver MAC was created during the 2025 Québec Hackathon to estimate battery lifespan using collected data.</div>
-                        <div>Technologies: <em>Python</em>, <em>PromQL</em>, <em>Prometheus</em>, <em>Grafana</em>, <em>AlertManager</em></div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script src="assets/cv.js"></script>
-        <script src="assets/cv.background.js"></script>
-    
+            </div>
+        </section>
+    </main>
+    <script>
+        (function() {
+            var currentLang = localStorage.getItem('cv-lang') || (navigator.language && navigator.language.startsWith('fr') ? 'fr' : 'en');
+            var t = {};
 
-</body></html>
+            function applyTranslations() {
+                document.querySelectorAll('[data-i18n]').forEach(function(el) {
+                    var key = el.getAttribute('data-i18n');
+                    if (t[key]) el.textContent = t[key];
+                });
+                document.querySelectorAll('[data-i18n-alt]').forEach(function(el) {
+                    var key = el.getAttribute('data-i18n-alt');
+                    if (t[key]) el.setAttribute('alt', t[key]);
+                });
+                if (t['page.title']) document.title = t['page.title'];
+                document.documentElement.lang = currentLang === 'fr' ? 'fr' : 'en';
+            }
+
+            function setLang(lang) {
+                currentLang = lang;
+                localStorage.setItem('cv-lang', lang);
+                fetch('locales/' + lang + '.json')
+                    .then(function(r) { return r.json(); })
+                    .then(function(json) {
+                        t = json;
+                        applyTranslations();
+                    });
+            }
+
+            document.getElementById('lang-switcher').addEventListener('click', function(e) {
+                var btn = e.target.closest('button[data-lang]');
+                if (btn) setLang(btn.getAttribute('data-lang'));
+            });
+
+            setLang(currentLang);
+        })();
+    </script>
+    <script src="assets/cv.js"></script>
+    <script src="assets/cv.background.js"></script>
+</body>
+</html>

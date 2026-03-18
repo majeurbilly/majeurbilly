@@ -1,0 +1,56 @@
+{
+  "ui.lang.fr": "FR",
+  "ui.lang.en": "EN",
+  
+  "page.h1": "Curriculum Vitae",
+  "page.title": "Billy - Curriculum Vitae",
+  
+  "aboutme.title": "About Me",
+  "aboutme.location": "Duberger, Quebec",
+  "aboutme.email.label": "E-Mail",
+  "aboutme.email.revealText": "enable JavaScript to see the E-Mail address",
+  "aboutme.github.label": "GitHub",
+  "aboutme.github.urlText": "github.com/majeurbilly",
+  "aboutme.website.label": "Website",
+  "aboutme.website.urlText": "majeurbilly.github.io",
+  "aboutme.photo.alt": "Photo of Billy",
+  
+  "education.title": "Education",
+  "education.item1.date": "08/2024 - Present",
+  "education.item1.school": "Cégep de Sainte-Foy",
+  "education.item1.location": ", Quebec City, Canada",
+  "education.item1.degree.prefix": "AEC (",
+  "education.item1.degree.value": "Programming, Databases and Servers",
+  "education.item1.degree.suffix": ")",
+
+  "experience.title": "Experience",
+
+  "skills.title": "Skills",
+  "skills.languages.title": "Languages",
+  "skills.languages.fr_native": "French (native)",
+  "skills.languages.en_fluent": "English (intermediate)",
+  
+  "skills.technologies.title": "Technologies",
+  "skills.advanced.label": "Databases:",
+  "skills.advanced.tech.sql": "SQL",
+  "skills.intermediate.label": "Infrastructure & DevOps:",
+  "skills.intermediate.tech.linux": "Linux",
+  "skills.intermediate.tech.devops": "DevOps",
+  "skills.intermediate.tech.networking": "Networking",
+  "skills.basic.label": "Tools:",
+  "skills.basic.tech.ha": "Home Assistant",
+  
+  "activities.title": "Projects & Activities",
+  "activities.item1.year": "2026",
+  "activities.project.name": "Meteor",
+  "activities.project.createdRest1": " was developed as part of the ",
+  "activities.project.createdRest2": " course (Tp3 Amoc).",
+  
+  "activities.item2.year": "2025",
+  "activities.hackathon.line1.prefix": "Participant in the ",
+  "activities.hackathon.name": "Hackathon 2025",
+  "activities.hackathon.line1.suffix": " organized by ",
+  "activities.hackathon.organizer": "Quebec International",
+  "activities.hackathon.line1.end": ".",
+  "activities.repo.line3.text": "Repo for this project"
+}

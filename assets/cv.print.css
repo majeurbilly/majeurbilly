@@ -1,47 +1,49 @@
+/* --- PARAMÈTRES DE LA PAGE --- */
 @page {
-    size: A4;
-    margin: 2cm;
-
-    @bottom-left {
-        content: counter(page) "/" counter(pages);
-    }
+    /* Au Québec/Canada, le standard papier est le format Lettre (Letter), pas le A4 */
+    size: letter portrait;
+    margin: 1.5cm;
 }
 
+/* --- RÉINITIALISATION DES COULEURS (Anti-Mode Sombre) --- */
 body {
-    font-family: Georgia, serif;
+    background-color: white !important;
+    background-image: none !important;
+    color: black !important;
+    font-size: 11pt; /* Les points (pt) sont plus adaptés que les pixels (px) sur papier */
 }
 
-#toggles {
-    display: none;
+/* --- NETTOYAGE DE L'INTERFACE --- */
+canvas,
+.no-print,
+#lang-switcher {
+    display: none !important;
 }
 
-section {
-    page-break-after: avoid;
+/* --- STRUCTURE ET SAUTS DE PAGE --- */
+/* Évite qu'une section ou une expérience soit coupée maladroitement sur deux pages */
+section,
+.timeline > div {
     page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 15px;
 }
 
-section.timeline > div {
-    page-break-inside: avoid;
-}
-
+/* --- AMÉLIORATION DES LIENS POUR LE PAPIER --- */
 a {
-    color: black;
     text-decoration: none;
+    color: black !important;
 }
 
-abbr {
-    text-decoration: none;
+/* Affiche l'URL complète à côté des liens externes pour que la personne puisse la retaper */
+main a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555 !important;
+    font-weight: normal;
 }
 
-abbr[title]:after {
-    content: ' (' attr(title) ')';
-    hyphens: unset;
-}
-
-canvas {
-    display: none;
-}
-
-a[href^="http"].printable:after {
-    content: ' (' attr(href) ')';
+/* Exception : on ne veut pas afficher l'URL à côté de l'adresse courriel si elle utilise "mailto:" */
+main a[href^="mailto:"]::after {
+    content: "";
 }
