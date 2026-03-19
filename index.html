@@ -205,17 +205,14 @@
             var t = {};
 
             function applyTranslations() {
-                // Textes standards
                 document.querySelectorAll('[data-i18n]').forEach(function(el) {
                     var key = el.getAttribute('data-i18n');
                     if (t[key]) el.textContent = t[key];
                 });
-                // Textes avec balises HTML (ex: <strong>)
                 document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
                     var key = el.getAttribute('data-i18n-html');
                     if (t[key]) el.innerHTML = t[key];
                 });
-                // Attributs alt pour les images
                 document.querySelectorAll('[data-i18n-alt]').forEach(function(el) {
                     var key = el.getAttribute('data-i18n-alt');
                     if (t[key]) el.setAttribute('alt', t[key]);
