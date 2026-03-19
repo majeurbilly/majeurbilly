@@ -59,8 +59,7 @@
   "skills.cat2.desc": "SQL, NoSQL, REST APIs, Real-time Messaging (MQTT, SignalR).",
 
   "skills.cat3.title": "Infrastructure, Cloud & DevOps",
-  "skills.cat3.desc": "Linux (NixOS), Microsoft Azure, Docker, Kubernetes, CI/CD (Automated testing).",
-
+  "skills.cat3.desc": "Linux, Terraform (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD (Automated testing).",
   "skills.cat4.title": "Hardware & IoT",
   "skills.cat4.desc": "Microcontrollers (ESP32, Arduino), Raspberry Pi, Embedded Systems.",
 

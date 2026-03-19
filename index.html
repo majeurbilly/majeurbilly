@@ -142,28 +142,28 @@
             <div class="timeline-item">
                 <div class="timeline-date" data-i18n="skills.cat1.title">Programming & Frameworks</div>
                 <div class="timeline-content">
-                    <p data-i18n="skills.cat1.desc">C# (.NET 8, xUnit), C++, Python, JavaScript/TypeScript (Jest), React.</p>
+                    <p data-i18n-html="skills.cat1.desc">C# (.NET 8, xUnit), C++, Python, JavaScript/TypeScript (Jest), React.</p>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-date" data-i18n="skills.cat2.title">Databases & Architecture</div>
                 <div class="timeline-content">
-                    <p data-i18n="skills.cat2.desc">SQL, NoSQL, REST APIs, Real-time Messaging (MQTT, SignalR).</p>
+                    <p data-i18n-html="skills.cat2.desc">SQL, NoSQL, REST APIs, Real-time Messaging (MQTT, SignalR).</p>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-date" data-i18n="skills.cat3.title">Infrastructure, Cloud & DevOps</div>
                 <div class="timeline-content">
-                    <p data-i18n="skills.cat3.desc">Linux (NixOS), Microsoft Azure, Docker, Kubernetes, CI/CD (Automated testing).</p>
+                    <p data-i18n-html="skills.cat3.desc">Linux, Terraform (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD (Automated testing).</p>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-date" data-i18n="skills.cat4.title">Hardware & IoT</div>
                 <div class="timeline-content">
-                    <p data-i18n="skills.cat4.desc">Microcontrollers (ESP32, Arduino), Raspberry Pi, Embedded Systems.</p>
+                    <p data-i18n-html="skills.cat4.desc">Microcontrollers (ESP32, Arduino), Raspberry Pi, Embedded Systems.</p>
                 </div>
             </div>
         </section>
@@ -205,10 +205,17 @@
             var t = {};
 
             function applyTranslations() {
+                // Textes standards
                 document.querySelectorAll('[data-i18n]').forEach(function(el) {
                     var key = el.getAttribute('data-i18n');
                     if (t[key]) el.textContent = t[key];
                 });
+                // Textes avec balises HTML (ex: <strong>)
+                document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+                    var key = el.getAttribute('data-i18n-html');
+                    if (t[key]) el.innerHTML = t[key];
+                });
+                // Attributs alt pour les images
                 document.querySelectorAll('[data-i18n-alt]').forEach(function(el) {
                     var key = el.getAttribute('data-i18n-alt');
                     if (t[key]) el.setAttribute('alt', t[key]);
