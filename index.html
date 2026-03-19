@@ -17,6 +17,7 @@
 </head>
 <body class="dark">
     <canvas></canvas>
+    <div class="cv-wrapper">
     <header class="header-cv">
         <h1 data-i18n="page.h1">Curriculum Vitae</h1>
 
@@ -197,6 +198,7 @@
             </div>
         </section>
     </main>
+    </div>
     <script>
         (function() {
             var currentLang = localStorage.getItem('cv-lang') || (navigator.language && navigator.language.startsWith('fr') ? 'fr' : 'en');

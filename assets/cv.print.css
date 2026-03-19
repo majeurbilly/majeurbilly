@@ -9,6 +9,10 @@ body {
     line-height: 1.2 !important;
 }
 
+.cv-wrapper {
+    display: contents !important;
+}
+
 canvas,
 .no-print,
 header nav,

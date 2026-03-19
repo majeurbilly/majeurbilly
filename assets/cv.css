@@ -242,3 +242,30 @@ body.dark #skills h4 + p {
     color: #fff !important; /* Blanc pur pour les mots-clés */
     font-weight: bold !important;
 }
+
+.cv-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+
+    /* Bloc noir solide pour une lisibilité maximale */
+    background: #0a0a0c;
+
+    padding: 50px;
+    border-radius: 8px;
+    border: 1px solid #222; /* Bordure discrète */
+    box-content: border-box;
+    position: relative;
+    z-index: 10;
+
+    /* Ombre portée pour détacher le bloc du fond */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustement pour le mobile */
+@media screen and (max-width: 768px) {
+    .cv-wrapper {
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+    }
+}
