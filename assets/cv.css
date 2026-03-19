@@ -101,20 +101,6 @@ ul {
     padding: 0;
 }
 
-section#skills > div > div > div {
-    margin-bottom: 0.2em;
-}
-
-section#skills > div > div > div > div:last-child {
-    margin-left: 1.5em;
-}
-
-/* Dans la section #skills, la colonne "Technologies" (dernier div direct) doit empiler verticalement
-   pour éviter que le titre <h3> et le premier bloc <h4> soient collés sur la même ligne. */
-section#skills > div:last-child {
-    flex-direction: column;
-}
-
 canvas {
     position: fixed;
     z-index: -1;
@@ -220,4 +206,39 @@ body.dark .github-link {
     color: #0094ff;
     margin-top: 1.25em;
     margin-bottom: 0.4em;
+}
+
+/* Texte des catégories de Skills (sous les h4 bleus) */
+#skills h4 + p {
+    margin: 0 0 0.9em 0;
+    color: #555;
+    line-height: 1.4;
+}
+
+body.dark #skills h4 + p {
+    color: #ccc;
+}
+
+/* --- AMÉLIORATION DE LA LISIBILITÉ DES TECHNOS (V2 FINALE) --- */
+
+/* 1. On donne la couleur d'accent bleue à toutes les catégories de technos pour qu'elles ressortent */
+#skills h4 {
+    color: #00aaff !important; /* Bleu d'accent actuel */
+    margin-top: 1.2rem !important; /* Un peu d'espace au-dessus de chaque bloc */
+    margin-bottom: 0.3rem !important;
+    font-size: 1.1rem !important;
+}
+
+/* 2. On adoucit le texte descriptif non-bold pour qu'il soit moins "agressif" et plus gris. */
+#skills p {
+    color: #aaa !important; /* Un gris plus doux pour le bruit de fond */
+    line-height: 1.5 !important; /* Interligne plus aérée pour la lecture */
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+}
+
+/* 3. On force les vrais mots-clés importants (les <strong>) en blanc pur brillant pour qu'ils "pop" instantanément. */
+#skills p strong {
+    color: #fff !important; /* Blanc pur pour les mots-clés */
+    font-weight: bold !important;
 }

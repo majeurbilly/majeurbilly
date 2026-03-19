@@ -1,55 +1,65 @@
-/* --- PARAMÈTRES DE LA PAGE --- */
 @page {
-    /* Au Québec/Canada, le standard papier est le format Lettre (Letter), pas le A4 */
-    size: letter portrait;
-    margin: 1.5cm;
+    margin: 0.8cm; 
 }
 
-/* --- RÉINITIALISATION DES COULEURS (Anti-Mode Sombre) --- */
 body {
-    background-color: white !important;
-    background-image: none !important;
-    color: black !important;
-    font-size: 11pt; /* Les points (pt) sont plus adaptés que les pixels (px) sur papier */
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.2 !important;
 }
 
-/* --- NETTOYAGE DE L'INTERFACE --- */
 canvas,
 .no-print,
-#lang-switcher {
+header nav,
+#lang-switcher,
+.github-link,
+button {
     display: none !important;
 }
 
-/* --- STRUCTURE ET SAUTS DE PAGE --- */
-/* Évite qu'une section ou une expérience soit coupée maladroitement sur deux pages */
-section,
-.timeline > div {
+.print-only {
+    display: block !important;
+}
+
+h1, h2, h3, h4, h5, .year, .timeline-date, p, li, span {
+    color: #000 !important;
+}
+
+section {
+    margin-bottom: 1rem !important; 
+    padding: 0 !important;
+}
+
+h2 { margin: 0 0 0.4rem 0 !important; font-size: 14pt !important; }
+h3 { margin: 0 0 0.3rem 0 !important; font-size: 12pt !important; }
+h4 { margin: 0 0 0.1rem 0 !important; font-size: 10.5pt !important; }
+h5 { margin: 0 0 0.2rem 0 !important; font-size: 9.5pt !important; }
+
+.timeline-item {
+    margin-bottom: 0.5rem !important;
+    gap: 1rem !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+    align-items: flex-start !important;
+}
+
+.timeline-content p,
+.timeline-content ul {
+    margin: 0 0 0.2rem 0 !important;
+    padding-top: 0 !important;
+}
+
+.timeline-item,
+h2,
+h3 {
     page-break-inside: avoid;
     break-inside: avoid;
-    margin-bottom: 15px;
 }
 
-/* --- AMÉLIORATION DES LIENS POUR LE PAPIER --- */
-a {
-    text-decoration: none;
-    color: black !important;
-}
-
-/* Affiche l'URL complète à côté des liens externes pour que la personne puisse la retaper */
-main a[href^="http"]::after {
-    content: " (" attr(href) ")";
-    font-size: 0.85em;
-    color: #555 !important;
-    font-weight: normal;
-}
-
-/* Exception : on ne veut pas afficher l'URL à côté de l'adresse courriel si elle utilise "mailto:" */
-main a[href^="mailto:"]::after {
-    content: "";
-}
-
-/* À l'impression : afficher l'adresse courriel en texte lisible */
-.print-only {
-    display: inline !important;
-    font-weight: bold;
+h2,
+h3 {
+    page-break-after: avoid;
+    break-after: avoid;
 }
