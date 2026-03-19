@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Billy - Curriculum Vitae</title>
+    <title>Billy Hallé | Développeur .NET & IoT</title>
+    <meta name="description" content="Développeur .NET et IoT à Québec. Spécialisé en C#, SQL et solutions connectées.">
+
+    <meta property="og:title" content="Billy Hallé - Portfolio Professionnel">
+    <meta property="og:description" content="Découvrez mon parcours en programmation, mes projets IoT et mon expertise .NET.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://majeurbilly.github.io/">
+    <meta property="og:image" content="https://majeurbilly.github.io/assets/preview.png">
     <link rel="stylesheet" href="assets/cv.css">
     <link rel="stylesheet" href="assets/cv.screen.css" media="screen">
     <link rel="stylesheet" href="assets/cv.print.css" media="print">
@@ -14,9 +21,9 @@
         <h1 data-i18n="page.h1">Curriculum Vitae</h1>
 
         <nav id="lang-switcher" class="controls no-print" aria-label="Contrôles du site">
-            <button type="button" data-lang="fr" data-i18n="ui.lang.fr">FR</button>
+            <button id="btn-fr" type="button" data-lang="fr" aria-label="Changer la langue en Français" data-i18n="ui.lang.fr">FR</button>
             <span aria-hidden="true"> | </span>
-            <button type="button" data-lang="en" data-i18n="ui.lang.en">EN</button>
+            <button id="btn-en" type="button" data-lang="en" aria-label="Switch language to English" data-i18n="ui.lang.en">EN</button>
             <span aria-hidden="true"> | </span>
             <button type="button" onclick="window.print()">🖨️</button>
         </nav>
@@ -55,35 +62,38 @@
         </section>
         <section id="education" class="timeline">
             <h2 data-i18n="education.title">Education</h2>
-            <div>
-                <div data-i18n="education.item1.date">08/2024 - Present</div>
-                <div>
-                    <div><strong data-i18n="education.item1.school">Cégep de Sainte-Foy</strong><span data-i18n="education.item1.location">, Quebec City, Canada</span></div>
-                    <div><span data-i18n="education.item1.degree.prefix"></span><em data-i18n="education.item1.degree.value">AEC (Programming, Databases and Servers)</em><span data-i18n="education.item1.degree.suffix"></span></div>
+            <div class="timeline-item">
+                <div class="timeline-date" data-i18n="education.item1.date">08/2024 - Present</div>
+                <div class="timeline-content">
+                    <h4><span data-i18n="education.item1.degree.prefix"></span><em data-i18n="education.item1.degree.value">AEC (Programming, Databases and Servers)</em><span data-i18n="education.item1.degree.suffix"></span></h4>
+                    <h5><span data-i18n="education.item1.school">Cégep de Sainte-Foy</span><span data-i18n="education.item1.location">, Quebec City, Canada</span></h5>
                 </div>
             </div>
-            <div>
-                <div data-i18n="education.item2.date">2023</div>
-                <div>
-                    <div><strong data-i18n="education.item2.school">Saint-Louis Center</strong></div>
-                    <div><em data-i18n="education.item2.degree.value">High School Equivalency Diploma (TENS)</em></div>
+
+            <div class="timeline-item">
+                <div class="timeline-date" data-i18n="education.item2.date">2023</div>
+                <div class="timeline-content">
+                    <h4><em data-i18n="education.item2.degree.value">High School Equivalency Diploma (TENS)</em></h4>
+                    <h5 data-i18n="education.item2.school">Saint-Louis Center</h5>
                 </div>
             </div>
-            <div>
-                <div data-i18n="education.item3.date">2016</div>
-                <div>
-                    <div><strong data-i18n="education.item3.school">IUSMQ</strong></div>
-                    <div><em data-i18n="education.item3.degree.value">Law 90 Certification (Medication Administration)</em></div>
+
+            <div class="timeline-item">
+                <div class="timeline-date" data-i18n="education.item3.date">2016</div>
+                <div class="timeline-content">
+                    <h4><em data-i18n="education.item3.degree.value">Law 90 Certification (Medication Administration)</em></h4>
+                    <h5 data-i18n="education.item3.school">IUSMQ</h5>
                 </div>
             </div>
         </section>
         <section id="experience" class="timeline">
             <h2 data-i18n="experience.title">Work Experience</h2>
             <h3 data-i18n="experience.relevant.title">Relevant Experience</h3>
-            <div>
-                <div data-i18n="experience.item1.date">2023</div>
-                <div>
-                    <div><strong data-i18n="experience.item1.role">Documentation and Equipment Clerk</strong> — <span data-i18n="experience.item1.company">Laval University</span></div>
+            <div class="timeline-item">
+                <div class="timeline-date" data-i18n="experience.item1.date">2023</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="experience.item1.role">Documentation and Equipment Clerk</h4>
+                    <h5 data-i18n="experience.item1.company">Laval University</h5>
                     <ul>
                         <li data-i18n="experience.item1.desc1">Configuration and programming of identification chips for document management.</li>
                         <li data-i18n="experience.item1.desc2">Optimization of physical and logical collection organization (indexing).</li>
@@ -92,20 +102,23 @@
                 </div>
             </div>
             <h3 data-i18n="experience.path.title">Professional Background and Responsibilities</h3>
-            <div>
-                <div data-i18n="experience.item2.date">2016 - 2018</div>
-                <div>
-                    <div><strong data-i18n="experience.item2.role">Mental Health Worker</strong> — <span data-i18n="experience.item2.company">Chanoine-Martin Residence</span></div>
+            <div class="timeline-item">
+                <div class="timeline-date" data-i18n="experience.item2.date">2016 - 2018</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="experience.item2.role">Mental Health Worker</h4>
+                    <h5 data-i18n="experience.item2.company">Chanoine-Martin Residence</h5>
                     <ul>
                         <li data-i18n="experience.item2.desc1">Rigorous management of medication protocols (Law 90) and administrative procedures.</li>
                         <li data-i18n="experience.item2.desc2">Crisis intervention and stress management in critical environments.</li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <div data-i18n="experience.item3.date">2019 - 2023</div>
-                <div>
-                    <div><strong data-i18n="experience.item3.role">Diverse Logistic Experiences</strong> — <span data-i18n="experience.item3.company">Metro Richelieu / JM Rouleau</span></div>
+
+            <div class="timeline-item">
+                <div class="timeline-date" data-i18n="experience.item3.date">2019 - 2023</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="experience.item3.role">Diverse Logistic Experiences</h4>
+                    <h5 data-i18n="experience.item3.company">Metro Richelieu / JM Rouleau</h5>
                     <ul>
                         <li data-i18n="experience.item3.desc1">Mastery of specialized equipment, inventory management, and teamwork.</li>
                     </ul>
@@ -178,32 +191,33 @@
                 </div>
             </div>
         </section>
-        <section id="activities" class="timeline">
-            <h2 data-i18n="activities.title">Projects & Activities</h2>
-            <div>
-                <div data-i18n="activities.item1.year">2026</div>
-                <div>
-                    <div>
-                        <q data-i18n="activities.project.name">Meteor</q>
-                        <span data-i18n="activities.project.createdRest1"> was developed as part of the </span>
-                        <em>Tp3 Amoc</em>
-                        <span data-i18n="activities.project.createdRest2"> course (Tp3 Amoc).</span>
-                    </div>
+        <section id="projects" class="timeline">
+            <h2 data-i18n="projects.title">Projects & Achievements</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2026</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="projects.meteor.title">Meteor — Connected Weather Station (IoT)</h4>
+                    <p data-i18n="projects.meteor.desc">Full development of a weather station (Tp3 Amoc). Integration of microcontrollers, communication protocols (MQTT/I2C), and visualization dashboard.</p>
+                    <a href="https://github.com/majeurbilly/Station-Metor" target="_blank" rel="noopener" class="github-link" aria-label="Consulter le code source du projet sur GitHub" data-i18n="projects.repo_link">View source code (GitHub)</a>
                 </div>
             </div>
-            <div>
-                <div data-i18n="activities.item2.year">2025</div>
-                <div>
-                    <div>
-                        <span data-i18n="activities.hackathon.line1.prefix">Participant in the </span>
-                        <q data-i18n="activities.hackathon.name">Hackathon 2025</q>
-                        <span data-i18n="activities.hackathon.line1.suffix"> organized by </span>
-                        <a href="https://www.quebecinternational.ca/" data-i18n="activities.hackathon.organizer">Quebec International</a>
-                        <span data-i18n="activities.hackathon.line1.end">.</span>
-                    </div>
-                    <div>
-                        (<a href="https://github.com/majeurbilly/vermac-project-hackathon-2025" data-i18n="activities.repo.line3.text">Repo for this project</a>)
-                    </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="projects.omnivox.title">Dark Omnivox — Chrome Extension</h4>
+                    <p data-i18n="projects.omnivox.desc">Created a custom dark theme for the Omnivox platform to improve accessibility and visual comfort.</p>
+                    <a href="https://github.com/majeurbilly/dark_omnivox" target="_blank" rel="noopener" class="github-link" aria-label="Consulter le code source du projet sur GitHub" data-i18n="projects.repo_link">View source code (GitHub)</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="projects.hackathon.title">Quebec International Hackathon (2025)</h4>
+                    <p data-i18n="projects.hackathon.desc">Intensive team collaboration to solve a real-world technical challenge under pressure (Vermac Project).</p>
+                    <a href="https://github.com/majeurbilly/vermac-project-hackathon-2025" target="_blank" rel="noopener" class="github-link" aria-label="Consulter le code source du projet sur GitHub" data-i18n="projects.repo_link">View source code (GitHub)</a>
                 </div>
             </div>
         </section>

@@ -78,6 +78,19 @@
   "skills.cat6.pkg": " - Package Managers: npm, pnpm, NuGet, Maven.",
   "skills.cat6.cli": " - CLI Tools & Utilities: Git, System.CommandLine, nswag, OpenAPI / Swagger UI, ts-node, npx, yt-dlp, ffmpeg / ffprobe.",
 
+  "projects.title": "Projects & Achievements",
+
+  "projects.meteor.title": "Meteor — Connected Weather Station (IoT)",
+  "projects.meteor.desc": "Full development of a weather station (Tp3 Amoc). Integration of microcontrollers, communication protocols (MQTT/I2C), and visualization dashboard.",
+
+  "projects.omnivox.title": "Dark Omnivox — Chrome Extension",
+  "projects.omnivox.desc": "Created a custom dark theme for the Omnivox platform to improve accessibility and visual comfort.",
+
+  "projects.hackathon.title": "Quebec International Hackathon (2025)",
+  "projects.hackathon.desc": "Intensive team collaboration to solve a real-world technical challenge under pressure (Vermac Project).",
+
+  "projects.repo_link": "View source code (GitHub)",
+
   "activities.title": "Projects & Activities",
   "activities.item1.year": "2026",
   "activities.project.name": "Meteor",
