@@ -60,3 +60,8 @@ q:lang(fr), [lang="fr"] q {
 q:lang(en), [lang="en"] q {
     quotes: '"' '"';
 }
+
+/* À l'écran : cacher l'adresse en texte brut (réservée à l'impression) */
+.print-only {
+    display: none;
+}

@@ -1,17 +1,21 @@
-(function() {
-    let name = document.querySelector('section#aboutme address > div:first-of-type').innerHTML;
-    let emailAddress = name.toLowerCase().replace(' ', '@').replace(/(tel)$/, '.$1');
+// On attend que le DOM soit chargé
+document.addEventListener("DOMContentLoaded", function() {
+    // On découpe l'adresse pour qu'un robot ne puisse pas lire le mot complet
+    const user = "billy.halle.bh";
+    const domain = "gmail.com";
+    const maVraieAdresse = user + "@" + domain;
 
-    let emailLinks = document.querySelectorAll('a.email');
-    for (let i = 0; i < emailLinks.length; ++i) {
-        let link = emailLinks.item(i);
-        link.innerHTML = emailAddress;
-        link.addEventListener('click', e => {
-            e.preventDefault();
-            window.location.href = 'mailto:' + emailAddress;
-        });
+    const emailLink = document.querySelector('a.email');
+
+    if (emailLink) {
+        // 3. On remplace le texte "enable JavaScript..." par ton adresse
+        emailLink.textContent = maVraieAdresse;
+
+        // 4. On règle le lien pour qu'il ouvre un nouveau message vers ton Gmail
+        emailLink.setAttribute('href', 'mailto:' + maVraieAdresse);
     }
 
+    // Interrupteur mode sombre / clair
     function lightSwitch(e) {
         var darkClass = "dark";
         if (e.target.checked) {
@@ -24,6 +28,6 @@
     let lightSwitchElem = document.getElementById('darkmode');
     if (lightSwitchElem) {
         lightSwitchElem.addEventListener('click', lightSwitch);
-        lightSwitch({target: lightSwitchElem});
+        lightSwitch({ target: lightSwitchElem });
     }
-})();
+});

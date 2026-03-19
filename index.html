@@ -33,7 +33,10 @@
                     <div>
                         <div>
                             <div data-i18n="aboutme.email.label">E-Mail</div>
-                            <div><a href="#" class="email" data-i18n="aboutme.email.revealText">enable JavaScript to see the E-Mail address</a></div>
+                            <div>
+                                <a href="#" class="email no-print">enable JavaScript to see the E-Mail address</a>
+                                <span class="print-only">billy.halle.bh@gmail.com</span>
+                            </div>
                         </div>
                         <div>
                             <div data-i18n="aboutme.github.label">GitHub</div>
@@ -56,13 +59,58 @@
                 <div data-i18n="education.item1.date">08/2024 - Present</div>
                 <div>
                     <div><strong data-i18n="education.item1.school">Cégep de Sainte-Foy</strong><span data-i18n="education.item1.location">, Quebec City, Canada</span></div>
-                    <div><span data-i18n="education.item1.degree.prefix">AEC (</span><em data-i18n="education.item1.degree.value">Programming, Databases and Servers</em><span data-i18n="education.item1.degree.suffix">)</span></div>
+                    <div><span data-i18n="education.item1.degree.prefix"></span><em data-i18n="education.item1.degree.value">AEC (Programming, Databases and Servers)</em><span data-i18n="education.item1.degree.suffix"></span></div>
+                </div>
+            </div>
+            <div>
+                <div data-i18n="education.item2.date">2023</div>
+                <div>
+                    <div><strong data-i18n="education.item2.school">Saint-Louis Center</strong></div>
+                    <div><em data-i18n="education.item2.degree.value">High School Equivalency Diploma (TENS)</em></div>
+                </div>
+            </div>
+            <div>
+                <div data-i18n="education.item3.date">2016</div>
+                <div>
+                    <div><strong data-i18n="education.item3.school">IUSMQ</strong></div>
+                    <div><em data-i18n="education.item3.degree.value">Law 90 Certification (Medication Administration)</em></div>
                 </div>
             </div>
         </section>
         <section id="experience" class="timeline">
-            <h2 data-i18n="experience.title">Experience</h2>
-            <!-- future content -->
+            <h2 data-i18n="experience.title">Work Experience</h2>
+            <h3 data-i18n="experience.relevant.title">Relevant Experience</h3>
+            <div>
+                <div data-i18n="experience.item1.date">2023</div>
+                <div>
+                    <div><strong data-i18n="experience.item1.role">Documentation and Equipment Clerk</strong> — <span data-i18n="experience.item1.company">Laval University</span></div>
+                    <ul>
+                        <li data-i18n="experience.item1.desc1">Configuration and programming of identification chips for document management.</li>
+                        <li data-i18n="experience.item1.desc2">Optimization of physical and logical collection organization (indexing).</li>
+                        <li data-i18n="experience.item1.desc3">Technical support and documentary research for users.</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 data-i18n="experience.path.title">Professional Background and Responsibilities</h3>
+            <div>
+                <div data-i18n="experience.item2.date">2016 - 2018</div>
+                <div>
+                    <div><strong data-i18n="experience.item2.role">Mental Health Worker</strong> — <span data-i18n="experience.item2.company">Chanoine-Martin Residence</span></div>
+                    <ul>
+                        <li data-i18n="experience.item2.desc1">Rigorous management of medication protocols (Law 90) and administrative procedures.</li>
+                        <li data-i18n="experience.item2.desc2">Crisis intervention and stress management in critical environments.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div data-i18n="experience.item3.date">2019 - 2023</div>
+                <div>
+                    <div><strong data-i18n="experience.item3.role">Diverse Logistic Experiences</strong> — <span data-i18n="experience.item3.company">Metro Richelieu / JM Rouleau</span></div>
+                    <ul>
+                        <li data-i18n="experience.item3.desc1">Mastery of specialized equipment, inventory management, and teamwork.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="skills" class="timeline">
             <h2 data-i18n="skills.title">Skills</h2>
@@ -70,25 +118,62 @@
                 <div data-i18n="skills.languages.title">Languages</div>
                 <div>
                     <ul>
-                        <li data-i18n="skills.languages.fr_native">French (native)</li>
-                        <li data-i18n="skills.languages.en_fluent">English (intermediate)</li>
+                        <li data-i18n="skills.languages.fr">French: Native</li>
+                        <li data-i18n="skills.languages.en">English: Technical reading and written comprehension</li>
                     </ul>
                 </div>
             </div>
             <div>
-                <div data-i18n="skills.technologies.title">Technologies</div>
+                <h3 data-i18n="skills.tech.title">Technologies</h3>
                 <div>
                     <div>
-                        <div data-i18n="skills.advanced.label">Databases:</div>
-                        <div><em data-i18n="skills.advanced.tech.sql">SQL</em></div>
+                        <h4 data-i18n="skills.cat1.title">Languages & Frameworks</h4>
+                        <ul>
+                            <li data-i18n="skills.cat1.backend">Backend & Core: C#, .NET 8, ASP.NET Core MVC, C++, PHP, Python, Java.</li>
+                            <li data-i18n="skills.cat1.frontend">Frontend & UI: JavaScript (Vanilla, Async), TypeScript, React, Vite.</li>
+                            <li data-i18n="skills.cat1.scripting">Scripting: Bash, PowerShell.</li>
+                            <li data-i18n="skills.cat1.libs">Specific Libraries: Entity Framework Core (ORM), SFML (Multimedia/Games), Ink (TUI).</li>
+                        </ul>
                     </div>
                     <div>
-                        <div data-i18n="skills.intermediate.label">Infrastructure & DevOps:</div>
-                        <div><em data-i18n="skills.intermediate.tech.linux">Linux</em>, <em data-i18n="skills.intermediate.tech.devops">DevOps</em>, <em data-i18n="skills.intermediate.tech.networking">Networking</em></div>
+                        <h4 data-i18n="skills.cat2.title">Architecture, APIs & Protocols</h4>
+                        <ul>
+                            <li data-i18n="skills.cat2.arch">Architecture & Concepts: REST API, DevOps Principles, CI/CD, CAP Theorem, Hypervisors, Lambda Expressions.</li>
+                            <li data-i18n="skills.cat2.realtime">Real-time & Messaging: SignalR, WebSockets, MQTT, RabbitMQ, SOAP, RPC.</li>
+                            <li data-i18n="skills.cat2.iot">Hardware Protocols (IoT): I2C, SPI.</li>
+                            <li data-i18n="skills.cat2.modeling">Modeling: UML, PUML, Mermaid.</li>
+                        </ul>
                     </div>
                     <div>
-                        <div data-i18n="skills.basic.label">Tools:</div>
-                        <div><em data-i18n="skills.basic.tech.ha">Home Assistant</em></div>
+                        <h4 data-i18n="skills.cat3.title">Databases & Data Formats</h4>
+                        <ul>
+                            <li data-i18n="skills.cat3.relational">Relational: SQL, T-SQL (SQL Server), PostgreSQL, MySQL.</li>
+                            <li data-i18n="skills.cat3.nosql">NoSQL & Time Series: MongoDB, InfluxDB.</li>
+                            <li data-i18n="skills.cat3.formats">Formats & Encoding: JSON, XML, YAML / YML, CSV, Markdown, base64.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 data-i18n="skills.cat4.title">Infrastructure, Cloud & Containers</h4>
+                        <ul>
+                            <li data-i18n="skills.cat4.cloud">Cloud: Microsoft Azure, AWS, Google Cloud, Cloudflare (CDN).</li>
+                            <li data-i18n="skills.cat4.devops">DevOps & CI/CD: Azure DevOps (Pipelines, Boards, Repos, Test Plans, Artifacts), GitHub Pipelines.</li>
+                            <li data-i18n="skills.cat4.containers">Containerization & Orchestration: Docker, Kubernetes.</li>
+                            <li data-i18n="skills.cat4.os">Operating Systems: Linux (Ubuntu, Debian, Fedora, Arch, NixOS), Windows.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 data-i18n="skills.cat5.title">Hardware & IoT</h4>
+                        <ul>
+                            <li data-i18n="skills.cat5.devices">Devices: Microcontrollers, ESP32, Arduino, Raspberry Pi.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 data-i18n="skills.cat6.title">Development Tools, CLI & Managers</h4>
+                        <ul>
+                            <li data-i18n="skills.cat6.ides">IDEs & Editors: Visual Studio, Rider, IntelliJ, VS Code, VS Codium, Notepad++.</li>
+                            <li data-i18n="skills.cat6.pkg">Package Managers: npm, pnpm, NuGet, Maven.</li>
+                            <li data-i18n="skills.cat6.cli">CLI Tools & Utilities: Git, System.CommandLine, nswag, OpenAPI / Swagger UI, ts-node, npx, yt-dlp, ffmpeg / ffprobe.</li>
+                        </ul>
                     </div>
                 </div>
             </div>

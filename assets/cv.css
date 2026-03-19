@@ -125,6 +125,12 @@ section#skills > div > div > div > div:last-child {
     margin-left: 1.5em;
 }
 
+/* Dans la section #skills, la colonne "Technologies" (dernier div direct) doit empiler verticalement
+   pour éviter que le titre <h3> et le premier bloc <h4> soient collés sur la même ligne. */
+section#skills > div:last-child {
+    flex-direction: column;
+}
+
 canvas {
     position: fixed;
     z-index: -1;

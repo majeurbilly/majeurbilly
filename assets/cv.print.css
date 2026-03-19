@@ -47,3 +47,9 @@ main a[href^="http"]::after {
 main a[href^="mailto:"]::after {
     content: "";
 }
+
+/* À l'impression : afficher l'adresse courriel en texte lisible */
+.print-only {
+    display: inline !important;
+    font-weight: bold;
+}
