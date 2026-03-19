@@ -214,3 +214,10 @@ body.dark .timeline-content p {
 body.dark .github-link {
     color: #0094ff;
 }
+
+/* Catégories de compétences (Skills) en bleu */
+#skills h4 {
+    color: #0094ff;
+    margin-top: 1.25em;
+    margin-bottom: 0.4em;
+}
