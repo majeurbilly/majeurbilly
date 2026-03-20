@@ -1,12 +1,11 @@
-/* Met le header en Flexbox pour tout aligner sur la même ligne */
+
 .header-cv {
     display: flex;
-    justify-content: space-between; /* Pousse le titre à gauche et les boutons à droite */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-/* Un peu de style pour les boutons pour faire propre */
 .controls button {
     background: none;
     border: none;
@@ -49,19 +48,14 @@ body.dark a {
     color: #25d366;
 }
 
-/* --- Typographie multilingue pour les balises <q> --- */
-
-/* Français : Guillemets chevrons avec espace insécable (\00A0) */
 q:lang(fr), [lang="fr"] q {
     quotes: "«\00A0" "\00A0»";
 }
 
-/* Anglais : Guillemets doubles standards */
 q:lang(en), [lang="en"] q {
     quotes: '"' '"';
 }
 
-/* À l'écran : cacher l'adresse en texte brut (réservée à l'impression) */
 .print-only {
     display: none;
 }

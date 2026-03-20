@@ -4,7 +4,7 @@ html, body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
     line-height: 135%;
-    /*text-align: justify;*/
+
     word-wrap: break-word;
     hyphens: auto;
     transition-duration: 0.8s;
@@ -117,7 +117,6 @@ canvas.loaded {
     opacity: 1;
 }
 
-/* --- Entrées chronologiques (Formation / Expérience / Projets) --- */
 .timeline-item {
     display: flex;
     margin-bottom: 2rem;
@@ -201,14 +200,12 @@ body.dark .github-link {
     color: #0094ff;
 }
 
-/* Catégories de compétences (Skills) en bleu */
 #skills h4 {
     color: #0094ff;
     margin-top: 1.25em;
     margin-bottom: 0.4em;
 }
 
-/* Texte des catégories de Skills (sous les h4 bleus) */
 #skills h4 + p {
     margin: 0 0 0.9em 0;
     color: #555;
@@ -219,27 +216,22 @@ body.dark #skills h4 + p {
     color: #ccc;
 }
 
-/* --- AMÉLIORATION DE LA LISIBILITÉ DES TECHNOS (V2 FINALE) --- */
-
-/* 1. On donne la couleur d'accent bleue à toutes les catégories de technos pour qu'elles ressortent */
 #skills h4 {
-    color: #00aaff !important; /* Bleu d'accent actuel */
-    margin-top: 1.2rem !important; /* Un peu d'espace au-dessus de chaque bloc */
+    color: #00aaff !important;
+    margin-top: 1.2rem !important;
     margin-bottom: 0.3rem !important;
     font-size: 1.1rem !important;
 }
 
-/* 2. On adoucit le texte descriptif non-bold pour qu'il soit moins "agressif" et plus gris. */
 #skills p {
-    color: #aaa !important; /* Un gris plus doux pour le bruit de fond */
-    line-height: 1.5 !important; /* Interligne plus aérée pour la lecture */
+    color: #aaa !important;
+    line-height: 1.5 !important;
     margin-top: 0 !important;
     margin-bottom: 8px !important;
 }
 
-/* 3. On force les vrais mots-clés importants (les <strong>) en blanc pur brillant pour qu'ils "pop" instantanément. */
 #skills p strong {
-    color: #fff !important; /* Blanc pur pour les mots-clés */
+    color: #fff !important;
     font-weight: bold !important;
 }
 
@@ -247,21 +239,18 @@ body.dark #skills h4 + p {
     max-width: 900px;
     margin: 40px auto;
 
-    /* Bloc noir solide pour une lisibilité maximale */
     background: #0a0a0c;
 
     padding: 50px;
     border-radius: 8px;
-    border: 1px solid #222; /* Bordure discrète */
+    border: 1px solid #222;
     box-content: border-box;
     position: relative;
     z-index: 10;
 
-    /* Ombre portée pour détacher le bloc du fond */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Ajustement pour le mobile */
 @media screen and (max-width: 768px) {
     .cv-wrapper {
         margin: 0;

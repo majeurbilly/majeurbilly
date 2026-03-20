@@ -1,8 +1,4 @@
-/* ==========================================================================
-   STYLE IMPRESSION PDF - THÈME "TAYLOR BROOKS" (ATS-Friendly)
-   ========================================================================== */
 
-/* 1. Configuration de la page */
 @page {
     margin: 1cm 1.5cm;
     size: letter portrait;
@@ -18,27 +14,24 @@ body {
     print-color-adjust: exact !important;
 }
 
-/* 2. Éléments à cacher pour l'impression */
 .no-print,
-header.header-cv, /* On cache le titre générique "Curriculum Vitae" */
+header.header-cv,
 #lang-switcher,
 canvas,
 .github-link,
 button,
-#aboutme h2, /* On cache le titre "About Me" */
+#aboutme h2,
 #vanta-bg,
 .vanta-canvas {
     display: none !important;
 }
 
-/* 3. Neutralisation du wrapper web */
 .cv-wrapper {
     display: contents !important;
 }
 
-/* 4. LE HEADER (On transforme la section AboutMe en bloc d'en-tête massif) */
 #aboutme {
-    background-color: #1a4b6b !important; /* Le fameux bleu canard/marine */
+    background-color: #1a4b6b !important;
     color: #ffffff !important;
     padding: 20px 30px !important;
     border-radius: 8px !important;
@@ -49,12 +42,11 @@ button,
 
 #aboutme > div {
     display: flex !important;
-    flex-direction: row-reverse !important; /* Pousse la photo à GAUCHE, le texte à DROITE */
+    flex-direction: row-reverse !important;
     align-items: center !important;
     gap: 30px !important;
 }
 
-/* La Photo (En haut à gauche, bien ronde et propre) */
 #aboutme img {
     width: 110px !important;
     height: 110px !important;
@@ -64,13 +56,11 @@ button,
     margin: 0 !important;
 }
 
-/* Le conteneur du texte de l'en-tête */
 #aboutme > div > div:first-of-type {
     flex: 1 !important;
     margin: 0 !important;
 }
 
-/* Le Nom (Énorme et gras) */
 #aboutme address div:first-child {
     font-size: 28pt !important;
     font-weight: 800 !important;
@@ -78,22 +68,19 @@ button,
     letter-spacing: 0.5px !important;
 }
 
-/* La Localisation */
 #aboutme address div:last-child {
     font-size: 11pt !important;
     opacity: 0.9 !important;
     margin-bottom: 12px !important;
 }
 
-/* Les Contacts (Alignés horizontalement) */
 #aboutme address + div {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
-    gap: 15px 25px !important; /* Plus d'espace horizontal entre les éléments */
+    gap: 15px 25px !important;
 }
 
-/* On stylise les conteneurs individuels (label + lien) */
 #aboutme address + div > div {
     display: flex !important;
     flex-direction: row !important;
@@ -103,17 +90,15 @@ button,
     font-size: 10pt !important;
 }
 
-/* On fait réapparaître les étiquettes (E-Mail, GitHub, etc.) avec style */
 #aboutme address + div > div > div:first-child {
     display: block !important;
     font-weight: 700 !important;
-    color: #90caf9 !important; /* Bleu clair pour se détacher du fond */
+    color: #90caf9 !important;
     text-transform: uppercase !important;
     font-size: 8.5pt !important;
     letter-spacing: 0.5px !important;
 }
 
-/* On ajoute les deux points (:) après le label */
 #aboutme address + div > div > div:first-child::after {
     content: ":" !important;
 }
@@ -123,12 +108,10 @@ button,
     text-decoration: none !important;
 }
 
-/* Petit bonus : Une icône devant la localisation */
 #aboutme address div:last-child::before {
     content: "📍 " !important;
 }
 
-/* 5. SECTIONS ET TITRES (La ligne pointillée bleue) */
 section {
     margin-bottom: 20px !important;
     padding: 0 !important;
@@ -148,7 +131,6 @@ h2 {
     page-break-after: avoid;
 }
 
-/* 6. LA TIMELINE (L'illusion des 2 colonnes pour les items) */
 .timeline-item {
     display: flex !important;
     flex-direction: row !important;
@@ -159,9 +141,8 @@ h2 {
     break-inside: avoid;
 }
 
-/* La colonne de gauche (Dates) */
 .timeline-date {
-    flex: 0 0 130px !important; /* Largeur fixe pour aligner toutes les dates */
+    flex: 0 0 130px !important;
     color: #1a4b6b !important;
     font-style: italic !important;
     font-weight: 500 !important;
@@ -169,7 +150,6 @@ h2 {
     margin-top: 2px !important;
 }
 
-/* La colonne de droite (Contenu) */
 .timeline-content {
     flex: 1 !important;
 }
@@ -200,7 +180,6 @@ h2 {
     margin-bottom: 4px !important;
 }
 
-/* Spécifique aux Skills (Pour que ça reste compact) */
 #skills h4 {
     color: #1a4b6b !important;
     font-size: 10.5pt !important;
@@ -209,10 +188,9 @@ h2 {
 
 #skills p {
     margin-bottom: 12px !important;
-    color: #444 !important; /* Force le texte en gris foncé/presque noir pour l'impression */
+    color: #444 !important;
 }
 
-/* Retrait absolu de toutes ombres fantômes */
 *, *::before, *::after {
     box-shadow: none !important;
     text-shadow: none !important;
