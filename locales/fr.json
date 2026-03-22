@@ -11,7 +11,7 @@
   "aboutme.github.label": "GitHub",
   "aboutme.github.urlText": "github.com/majeurbilly",
   "aboutme.website.label": "Site web",
-  "aboutme.website.urlText": "majeurbilly.github.io",
+  "aboutme.website.urlText": "majeurbilly.github.io/majeurbilly",
   "aboutme.photo.alt": "Photo de Billy",
   
   "education.title": "Formation",
@@ -68,6 +68,9 @@
   "projects.meteor.title": "Meteor — Station météo connectée (IoT)",
   "projects.meteor.desc": "Développement complet d'une station météo (Tp3 Amoc). Intégration de microcontrôleurs, protocoles de communication (MQTT/I2C) et dashboard de visualisation.",
 
+  "projects.castle.title": "Castle of SFML — Moteur 3D & Jeu",
+  "projects.castle.desc": "Développement d'un moteur de rendu 3D (Raycaster) et d'un jeu de survie en C# (.NET 6). Implémentation d'une IA de pathfinding (BFS) et conception d'une architecture modulaire couverte par des tests automatisés (xUnit, CI/CD).",
+
   "projects.omnivox.title": "Dark Omnivox — Extension Chrome",
   "projects.omnivox.desc": "Création d'un thème sombre personnalisé pour la plateforme Omnivox afin d'améliorer l'accessibilité et le confort visuel.",
 
@@ -78,7 +81,7 @@
 
   "activities.title": "Projets & Activités",
   "activities.item1.year": "2026",
-  "activities.project.name": "Meteor",
+  "activities.project.name": "Metor",
   "activities.project.createdRest1": " a été développé dans le cadre du cours ",
   "activities.project.createdRest2": " (Tp3 Amoc).",
   
