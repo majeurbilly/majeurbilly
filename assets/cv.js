@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const user = "billy.halle.bh";
-    const domain = "gmail.com";
+    const user = "billy.halle";
+    const domain = "stringempty.dev";
     const maVraieAdresse = user + "@" + domain;
 
     const emailLink = document.querySelector('a.email');
