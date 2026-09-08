@@ -33,9 +33,9 @@ button,
 #aboutme {
     background-color: #1a4b6b !important;
     color: #ffffff !important;
-    padding: 20px 30px !important;
-    border-radius: 8px !important;
-    margin-bottom: 25px !important;
+    padding: 12px 18px !important;
+    border-radius: 6px !important;
+    margin-bottom: 14px !important;
     display: block !important;
     page-break-inside: avoid;
 }
@@ -44,15 +44,15 @@ button,
     display: flex !important;
     flex-direction: row-reverse !important;
     align-items: center !important;
-    gap: 30px !important;
+    gap: 18px !important;
 }
 
 #aboutme img {
-    width: 110px !important;
-    height: 110px !important;
+    width: 72px !important;
+    height: 72px !important;
     border-radius: 50% !important;
     object-fit: cover !important;
-    border: 3px solid #fff !important;
+    border: 2px solid #fff !important;
     margin: 0 !important;
 }
 
@@ -62,32 +62,32 @@ button,
 }
 
 #aboutme address div:first-child {
-    font-size: 28pt !important;
+    font-size: 18pt !important;
     font-weight: 800 !important;
-    margin-bottom: 5px !important;
-    letter-spacing: 0.5px !important;
+    margin-bottom: 2px !important;
+    letter-spacing: 0.3px !important;
 }
 
 #aboutme address div:last-child {
-    font-size: 11pt !important;
+    font-size: 9pt !important;
     opacity: 0.9 !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 6px !important;
 }
 
 #aboutme address + div {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
-    gap: 15px 25px !important;
+    gap: 8px 16px !important;
 }
 
 #aboutme address + div > div {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 6px !important;
+    gap: 4px !important;
     margin: 0 !important;
-    font-size: 10pt !important;
+    font-size: 8.5pt !important;
 }
 
 #aboutme address + div > div > div:first-child {
@@ -95,8 +95,8 @@ button,
     font-weight: 700 !important;
     color: #90caf9 !important;
     text-transform: uppercase !important;
-    font-size: 8.5pt !important;
-    letter-spacing: 0.5px !important;
+    font-size: 7pt !important;
+    letter-spacing: 0.3px !important;
 }
 
 #aboutme address + div > div > div:first-child::after {
@@ -113,7 +113,7 @@ button,
 }
 
 section {
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
     padding: 0 !important;
     page-break-inside: auto !important;
     break-inside: auto !important;
@@ -121,13 +121,13 @@ section {
 
 h2 {
     color: #1a4b6b !important;
-    font-size: 13pt !important;
+    font-size: 11pt !important;
     text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    border-bottom: 2px dotted #1a4b6b !important;
-    padding-bottom: 4px !important;
+    letter-spacing: 0.8px !important;
+    border-bottom: 1.5px dotted #1a4b6b !important;
+    padding-bottom: 2px !important;
     margin-top: 0 !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 8px !important;
     page-break-after: avoid;
 }
 
@@ -135,19 +135,19 @@ h2 {
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
-    gap: 20px !important;
-    margin-bottom: 15px !important;
+    gap: 12px !important;
+    margin-bottom: 8px !important;
     page-break-inside: avoid;
     break-inside: avoid;
 }
 
 .timeline-date {
-    flex: 0 0 130px !important;
+    flex: 0 0 110px !important;
     color: #1a4b6b !important;
     font-style: italic !important;
     font-weight: 500 !important;
-    font-size: 9.5pt !important;
-    margin-top: 2px !important;
+    font-size: 8.5pt !important;
+    margin-top: 1px !important;
 }
 
 .timeline-content {
@@ -156,28 +156,28 @@ h2 {
 
 .timeline-content h4 {
     color: #222 !important;
-    font-size: 11pt !important;
+    font-size: 10pt !important;
     font-weight: 700 !important;
-    margin: 0 0 3px 0 !important;
+    margin: 0 0 1px 0 !important;
 }
 
 .timeline-content h5 {
     color: #666 !important;
-    font-size: 10pt !important;
+    font-size: 9pt !important;
     font-weight: 600 !important;
     font-style: normal !important;
-    margin: 0 0 8px 0 !important;
+    margin: 0 0 4px 0 !important;
 }
 
 .timeline-content p, 
 .timeline-content ul {
     color: #444 !important;
-    margin: 0 0 8px 0 !important;
-    line-height: 1.5 !important;
+    margin: 0 0 4px 0 !important;
+    line-height: 1.35 !important;
 }
 
 .timeline-content li {
-    margin-bottom: 4px !important;
+    margin-bottom: 2px !important;
 }
 
 /* Tirets explicites à l'impression (expérience), FR et EN */
@@ -196,12 +196,12 @@ h2 {
 
 #skills h4 {
     color: #1a4b6b !important;
-    font-size: 10.5pt !important;
-    margin-bottom: 3px !important;
+    font-size: 9.5pt !important;
+    margin-bottom: 2px !important;
 }
 
 #skills p {
-    margin-bottom: 12px !important;
+    margin-bottom: 6px !important;
     color: #444 !important;
 }
 

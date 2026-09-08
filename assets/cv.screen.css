@@ -3,7 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.header-cv h1 {
+    font-size: 1.15rem;
+    margin: 0;
 }
 
 .controls button {

@@ -1,10 +1,10 @@
 {
   "ui.lang.fr": "FR",
   "ui.lang.en": "EN",
-  
+
   "page.h1": "Curriculum Vitae",
   "page.title": "Billy - Curriculum Vitae",
-  
+
   "aboutme.title": "About Me",
   "aboutme.location": "Duberger, Quebec",
   "aboutme.email.label": "E-Mail",
@@ -13,7 +13,7 @@
   "aboutme.website.label": "Website",
   "aboutme.website.urlText": "majeurbilly.github.io/majeurbilly",
   "aboutme.photo.alt": "Photo of Billy",
-  
+
   "education.title": "Education",
   "education.item1.date": "08/2024 - Present",
   "education.item1.school": "Cégep de Sainte-Foy",
@@ -21,31 +21,16 @@
   "education.item1.degree.prefix": "",
   "education.item1.degree.value": "AEC (Programming, Databases and Servers)",
   "education.item1.degree.suffix": "",
-  "education.item2.date": "2023",
-  "education.item2.school": "Saint-Louis Center",
-  "education.item2.degree.value": "High School Equivalency Diploma (TENS)",
-  "education.item3.date": "2016",
-  "education.item3.school": "IUSMQ",
-  "education.item3.degree.value": "Law 90 Certification (Medication Administration)",
 
   "experience.title": "Work Experience",
-  "experience.relevant.title": "Relevant Experience",
   "experience.item1.date": "2023",
   "experience.item1.role": "Documentation and Equipment Clerk",
   "experience.item1.company": "Laval University",
-  "experience.item1.desc1": "Configuration and programming of identification chips for document management.",
-  "experience.item1.desc2": "Optimization of physical and logical collection organization (indexing).",
-  "experience.item1.desc3": "Technical support and documentary research for users.",
-  "experience.path.title": "Professional Background and Responsibilities",
-  "experience.item2.date": "2019 - 2023",
-  "experience.item2.role": "Diverse Logistic Experiences",
-  "experience.item2.company": "Metro Richelieu / JM Rouleau",
-  "experience.item2.desc1": "Mastery of specialized equipment, inventory management, and teamwork.",
-  "experience.item3.date": "2016 - 2018",
-  "experience.item3.role": "Mental Health Worker",
-  "experience.item3.company": "Chanoine-Martin Residence",
-  "experience.item3.desc1": "Rigorous management of medication protocols (Law 90) and administrative procedures.",
-  "experience.item3.desc2": "Crisis intervention and stress management in critical environments.",
+  "experience.item1.desc1": "Configuration of identification chips and optimization of logical document organization.",
+  "experience.item2.date": "2016 - 2018",
+  "experience.item2.role": "Mental Health Worker",
+  "experience.item2.company": "Chanoine-Martin Residence",
+  "experience.item2.desc1": "Crisis intervention and stress management in critical environments.",
 
   "skills.title": "Skills",
   "skills.languages.title": "Languages",
@@ -54,29 +39,26 @@
   "skills.tech.title": "Technologies",
   "skills.cat1.title": "Programming & Frameworks",
   "skills.cat1.desc": "C# (xUnit), C++ (CMake, PlatformIO), Python (Scripts/Automation), JavaScript/TypeScript (React, Jest), Dart (Flutter), Go (WebSocket).",
-
   "skills.cat2.title": "Databases & Architecture",
   "skills.cat2.desc": "SQL, NoSQL, REST API, Publish-Subscribe Pattern (MQTT, SignalR).",
-
   "skills.cat3.title": "Infrastructure, Cloud & DevOps",
-  "skills.cat3.desc": "Linux, Terraform, Pulumi (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD pipelines, n8n.",
+  "skills.cat3.desc": "Linux, Terraform, Pulumi (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD pipelines.",
   "skills.cat4.title": "Hardware & IoT",
   "skills.cat4.desc": "Microcontrollers (ESP32, Arduino), Raspberry Pi, Servers, K8s Cluster.",
 
   "projects.title": "Projects & Achievements",
-
+  "projects.byfarlab.title": "ByfarLab",
+  "projects.byfarlab.desc": "Development of an athletic tracking application. MVC architecture, C++20 backend API (CMake/Ninja), and Flutter client with a localized database.",
+  "projects.crystal.title": "Crystal ERP",
+  "projects.crystal.desc": "Creation of specialized API endpoints for an ERP system, including real-time attendance validation logic.",
   "projects.meteor.title": "Meteor — Connected Weather Station (IoT)",
   "projects.meteor.desc": "Full development of a weather station (Tp3 Amoc). Integration of microcontrollers, communication protocols (MQTT/I2C), and visualization dashboard.",
-
   "projects.castle.title": "Castle of SFML — 3D Engine & Game",
   "projects.castle.desc": "Developed a 3D rendering engine (Raycaster) and survival game in C# (.NET 6). Implemented BFS pathfinding AI and designed a modular architecture with automated testing (xUnit, CI/CD).",
-
   "projects.omnivox.title": "Dark Omnivox — Chrome Extension",
   "projects.omnivox.desc": "Created a custom dark theme for the Omnivox platform to improve accessibility and visual comfort.",
-
   "projects.hackathon.title": "Quebec International Hackathon (2025)",
   "projects.hackathon.desc": "Intensive team collaboration to solve a real-world technical challenge under pressure (Vermac Project).",
-
   "projects.repo_link": "View source code (GitHub)",
 
   "activities.title": "Projects & Activities",
@@ -84,7 +66,6 @@
   "activities.project.name": "Metor",
   "activities.project.createdRest1": " was developed as part of the ",
   "activities.project.createdRest2": " course (Tp3 Amoc).",
-  
   "activities.item2.year": "2025",
   "activities.hackathon.line1.prefix": "Participant in the ",
   "activities.hackathon.name": "Hackathon 2025",
