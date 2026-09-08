@@ -59,7 +59,7 @@
   "skills.cat2.desc": "SQL, NoSQL, REST API, Publish-Subscribe Pattern (MQTT, SignalR).",
 
   "skills.cat3.title": "Infrastructure, Cloud & DevOps",
-  "skills.cat3.desc": "Linux, Terraform, Pulumi (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD pipelines.",
+  "skills.cat3.desc": "Linux, Terraform, Pulumi (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD pipelines, n8n.",
   "skills.cat4.title": "Hardware & IoT",
   "skills.cat4.desc": "Microcontrollers (ESP32, Arduino), Raspberry Pi, Servers, K8s Cluster.",
 
