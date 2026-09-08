@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    line-height: 135%;
+    line-height: 1.55;
 
     word-wrap: break-word;
     hyphens: auto;
@@ -92,8 +92,9 @@ section#aboutme .contact-item > div:last-child {
 }
 
 section > h2 {
-    margin-top: 1.1em;
-    margin-bottom: 0.55em;
+    margin-top: 1.5em;
+    margin-bottom: 0.9em;
+    font-size: 1.2rem;
 }
 
 section#aboutme > h2 {
@@ -106,14 +107,14 @@ section#aboutme > div > div:first-of-type {
     margin-left: 2em;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.92rem;
-    line-height: 1.3;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 section#aboutme address div:first-child {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.15em;
+    margin-bottom: 0.2em;
 }
 
 
@@ -158,19 +159,19 @@ canvas.loaded {
 
 .timeline-item {
     display: flex;
-    margin-bottom: 0.85rem;
+    margin-bottom: 1.15rem;
     align-items: flex-start;
     width: 100%;
     gap: 1rem;
 }
 
 .timeline-date {
-    width: 120px;
-    min-width: 120px;
+    width: 130px;
+    min-width: 130px;
     font-weight: bold;
     color: #3498db;
-    font-size: 0.85rem;
-    margin-top: 0.1rem;
+    font-size: 0.95rem;
+    margin-top: 0.15rem;
     flex-shrink: 0;
 }
 
@@ -180,12 +181,12 @@ canvas.loaded {
 }
 
 .timeline-content h4 {
-    margin: 0 0 0.1em 0;
-    font-size: 1.05rem;
+    margin: 0 0 0.15em 0;
+    font-size: 1.1rem;
 }
 
 .timeline-content h5 {
-    margin: 0 0 0.25em 0;
+    margin: 0 0 0.4em 0;
     font-weight: normal;
     color: #777;
     font-style: italic;
@@ -195,14 +196,14 @@ canvas.loaded {
     margin: 0;
     padding-left: 1.2em;
     color: #555;
-    font-size: 0.9rem;
-    line-height: 1.35;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .timeline-content p {
     margin: 0 0 10px 0;
     color: #555;
-    line-height: 1.4;
+    line-height: 1.55;
 }
 
 .github-link {
@@ -239,43 +240,59 @@ body.dark .github-link {
     color: #0094ff;
 }
 
-#skills .skills-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35em;
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: minmax(220px, 260px) 1fr;
+    column-gap: 1.25rem;
+    row-gap: 12px;
+    align-items: start;
     width: 100%;
 }
 
-#skills .skills-list li {
-    width: 100%;
-    line-height: 1.4;
-    color: #555;
-    font-size: 0.95rem;
-}
-
-#skills .skills-list strong {
-    color: #0094ff;
+#skills .skills-category {
     font-weight: 700;
+    color: #0094ff;
+    white-space: nowrap;
+    line-height: 1.5;
 }
 
-body.dark #skills .skills-list li {
+#skills .skills-values {
+    color: #555;
+    line-height: 1.5;
+    min-width: 0;
+}
+
+body.dark #skills .skills-category {
+    color: #00aaff;
+}
+
+body.dark #skills .skills-values {
     color: #ccc;
 }
 
-body.dark #skills .skills-list strong {
-    color: #00aaff;
+@media screen and (max-width: 640px) {
+    #skills .skills-grid {
+        grid-template-columns: 1fr;
+        row-gap: 4px;
+    }
+
+    #skills .skills-category {
+        white-space: normal;
+        margin-top: 0.55em;
+    }
+
+    #skills .skills-category:first-child {
+        margin-top: 0;
+    }
 }
 
 .cv-wrapper {
     max-width: 900px;
-    margin: 24px auto;
+    margin: 28px auto;
 
     background: #0a0a0c;
 
-    padding: 28px 36px;
+    padding: 36px 42px;
     border-radius: 8px;
     border: 1px solid #222;
     box-content: border-box;

@@ -216,24 +216,28 @@ h2 {
     margin-top: 0.05em !important;
 }
 
-#skills .skills-list {
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+#skills .skills-grid {
+    display: grid !important;
+    grid-template-columns: 200px 1fr !important;
+    column-gap: 12px !important;
+    row-gap: 6px !important;
+    align-items: start !important;
     width: 100% !important;
 }
 
-#skills .skills-list li {
-    margin: 0 0 2px 0 !important;
-    line-height: 1.3 !important;
-    color: #444 !important;
-    font-size: 9pt !important;
-    width: 100% !important;
-}
-
-#skills .skills-list strong {
-    color: #1a4b6b !important;
+#skills .skills-category {
     font-weight: 700 !important;
+    color: #1a4b6b !important;
+    white-space: nowrap !important;
+    line-height: 1.4 !important;
+    font-size: 9.5pt !important;
+}
+
+#skills .skills-values {
+    color: #444 !important;
+    line-height: 1.4 !important;
+    font-size: 9.5pt !important;
+    min-width: 0 !important;
 }
 
 *, *::before, *::after {
