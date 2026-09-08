@@ -194,15 +194,24 @@ h2 {
     margin-top: 0.05em !important;
 }
 
-#skills h4 {
-    color: #1a4b6b !important;
-    font-size: 9.5pt !important;
-    margin-bottom: 2px !important;
+#skills .skills-list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
 }
 
-#skills p {
-    margin-bottom: 6px !important;
+#skills .skills-list li {
+    margin: 0 0 4px 0 !important;
+    line-height: 1.35 !important;
     color: #444 !important;
+    font-size: 9.5pt !important;
+    width: 100% !important;
+}
+
+#skills .skills-list strong {
+    color: #1a4b6b !important;
+    font-weight: 700 !important;
 }
 
 *, *::before, *::after {

@@ -214,39 +214,34 @@ body.dark .github-link {
     color: #0094ff;
 }
 
-#skills h4 {
-    color: #0094ff;
-    margin-top: 1.25em;
-    margin-bottom: 0.4em;
+#skills .skills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    width: 100%;
 }
 
-#skills h4 + p {
-    margin: 0 0 0.9em 0;
-    color: #555;
+#skills .skills-list li {
+    width: 100%;
     line-height: 1.4;
+    color: #555;
+    font-size: 0.95rem;
 }
 
-body.dark #skills h4 + p {
+#skills .skills-list strong {
+    color: #0094ff;
+    font-weight: 700;
+}
+
+body.dark #skills .skills-list li {
     color: #ccc;
 }
 
-#skills h4 {
-    color: #00aaff !important;
-    margin-top: 1.2rem !important;
-    margin-bottom: 0.3rem !important;
-    font-size: 1.1rem !important;
-}
-
-#skills p {
-    color: #aaa !important;
-    line-height: 1.5 !important;
-    margin-top: 0 !important;
-    margin-bottom: 8px !important;
-}
-
-#skills p strong {
-    color: #fff !important;
-    font-weight: bold !important;
+body.dark #skills .skills-list strong {
+    color: #00aaff;
 }
 
 .cv-wrapper {
