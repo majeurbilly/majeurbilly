@@ -53,10 +53,6 @@
   "projects.meteor.desc": "Full development of a weather station (Tp3 Amoc). Integration of microcontrollers, communication protocols (MQTT/I2C), and visualization dashboard.",
   "projects.castle.title": "Castle of SFML — 3D Engine & Game",
   "projects.castle.desc": "Developed a 3D rendering engine (Raycaster) and survival game in C# (.NET 6). Implemented BFS pathfinding AI and designed a modular architecture with automated testing (xUnit, CI/CD).",
-  "projects.omnivox.title": "Dark Omnivox — Chrome Extension",
-  "projects.omnivox.desc": "Created a custom dark theme for the Omnivox platform to improve accessibility and visual comfort.",
-  "projects.hackathon.title": "Quebec International Hackathon (2025)",
-  "projects.hackathon.desc": "Intensive team collaboration to solve a real-world technical challenge under pressure (Vermac Project).",
   "projects.repo_link": "View source code (GitHub)",
 
   "activities.title": "Projects & Activities",
