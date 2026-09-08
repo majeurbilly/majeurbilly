@@ -53,15 +53,15 @@
   "skills.languages.en": "Anglais : Technique et compréhension écrite",
   "skills.tech.title": "Technologies",
   "skills.cat1.title": "Programmation & Frameworks",
-  "skills.cat1.desc": "C# (.NET 8, xUnit), C++, Python, JavaScript/TypeScript (Jest), React.",
+  "skills.cat1.desc": "C# (xUnit), C++ (CMake, PlatformIO), Python (Scripts/Automatisation), JavaScript/TypeScript (React, Jest), Dart (Flutter), Go (WebSocket).",
 
   "skills.cat2.title": "Bases de données & Architecture",
-  "skills.cat2.desc": "SQL, NoSQL, API REST, Messagerie temps réel (MQTT, SignalR).",
+  "skills.cat2.desc": "SQL, NoSQL, API REST, Modèle Publish-Subscribe (MQTT, SignalR).",
 
   "skills.cat3.title": "Infrastructures, Cloud & DevOps",
-  "skills.cat3.desc": "Linux, Terraform (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD (Tests automatisés).",
+  "skills.cat3.desc": "Linux, Terraform, Pulumi (IaC), Microsoft Azure, Docker, Kubernetes, pipelines CI/CD.",
   "skills.cat4.title": "Matériel & IoT",
-  "skills.cat4.desc": "Microcontrôleurs (ESP32, Arduino), Raspberry Pi, Systèmes embarqués.",
+  "skills.cat4.desc": "Microcontrôleurs (ESP32, Arduino), Raspberry Pi, Serveurs, Cluster K8s.",
 
   "projects.title": "Projets & Réalisations",
 

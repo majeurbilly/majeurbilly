@@ -49,19 +49,19 @@
 
   "skills.title": "Skills",
   "skills.languages.title": "Languages",
-  "skills.languages.fr": "French: Native",
-  "skills.languages.en": "English: Technical reading and written comprehension",
+  "skills.languages.fr": "French: Native language",
+  "skills.languages.en": "English: Technical and reading comprehension",
   "skills.tech.title": "Technologies",
   "skills.cat1.title": "Programming & Frameworks",
-  "skills.cat1.desc": "C# (.NET 8, xUnit), C++, Python, JavaScript/TypeScript (Jest), React.",
+  "skills.cat1.desc": "C# (xUnit), C++ (CMake, PlatformIO), Python (Scripts/Automation), JavaScript/TypeScript (React, Jest), Dart (Flutter), Go (WebSocket).",
 
   "skills.cat2.title": "Databases & Architecture",
-  "skills.cat2.desc": "SQL, NoSQL, REST APIs, Real-time Messaging (MQTT, SignalR).",
+  "skills.cat2.desc": "SQL, NoSQL, REST API, Publish-Subscribe Pattern (MQTT, SignalR).",
 
   "skills.cat3.title": "Infrastructure, Cloud & DevOps",
-  "skills.cat3.desc": "Linux, Terraform (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD (Automated testing).",
+  "skills.cat3.desc": "Linux, Terraform, Pulumi (IaC), Microsoft Azure, Docker, Kubernetes, CI/CD pipelines.",
   "skills.cat4.title": "Hardware & IoT",
-  "skills.cat4.desc": "Microcontrollers (ESP32, Arduino), Raspberry Pi, Embedded Systems.",
+  "skills.cat4.desc": "Microcontrollers (ESP32, Arduino), Raspberry Pi, Servers, K8s Cluster.",
 
   "projects.title": "Projects & Achievements",
 
