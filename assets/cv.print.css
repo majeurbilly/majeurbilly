@@ -75,34 +75,50 @@ button,
     line-height: 1.25 !important;
 }
 
-#aboutme address + div {
+#aboutme address + div,
+#aboutme .contact-list {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
-    gap: 4px 12px !important;
+    align-items: center !important;
+    gap: 4px 14px !important;
 }
 
+#aboutme .contact-item,
 #aboutme address + div > div {
     display: flex !important;
     flex-direction: row !important;
-    align-items: center !important;
+    flex-wrap: nowrap !important;
+    align-items: baseline !important;
     gap: 4px !important;
     margin: 0 !important;
     font-size: 8pt !important;
     line-height: 1.25 !important;
 }
 
+#aboutme .contact-label,
 #aboutme address + div > div > div:first-child {
-    display: block !important;
+    display: inline-block !important;
+    flex: 0 0 auto !important;
     font-weight: 700 !important;
     color: #90caf9 !important;
     text-transform: uppercase !important;
     font-size: 6.5pt !important;
     letter-spacing: 0.3px !important;
+    white-space: nowrap !important;
+    hyphens: none !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
 }
 
+#aboutme .contact-label::after,
 #aboutme address + div > div > div:first-child::after {
     content: ":" !important;
+}
+
+#aboutme .contact-item > div:last-child,
+#aboutme address + div > div > div:last-child {
+    white-space: nowrap !important;
 }
 
 #aboutme a {

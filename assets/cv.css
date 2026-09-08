@@ -50,20 +50,45 @@ section#aboutme > div > div > div {
     margin-top: 0.25em;
 }
 
-section#aboutme address + div > div {
+section#aboutme address + div.contact-list,
+section#aboutme .contact-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35em 1.25em;
+    margin-top: 0.35em;
+}
+
+section#aboutme .contact-item {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0.35em;
+    margin-top: 0;
+    min-width: 0;
 }
 
+section#aboutme .contact-label,
 section#aboutme address + div > div > div:first-of-type {
-    flex-basis: 5em;
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    hyphens: none;
+    word-break: keep-all;
+    overflow-wrap: normal;
 }
 
+section#aboutme .contact-label::after,
 section#aboutme address + div > div > div:first-of-type:after {
     content: ":";
+}
+
+section#aboutme .contact-item > div:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
 }
 
 section > h2 {
