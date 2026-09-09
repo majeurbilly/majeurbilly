@@ -39,6 +39,10 @@ section div > p:last-child {
     margin-bottom: 0;
 }
 
+section#aboutme {
+    margin-bottom: 2.5rem;
+}
+
 section#aboutme > div {
     display: flex;
     flex-direction: row;
