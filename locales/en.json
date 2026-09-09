@@ -40,7 +40,7 @@
   "skills.backend.title": "Backend & Software",
   "skills.backend.desc": "C# (xUnit), C++ (CMake, PlatformIO), Python, Go (WebSocket)",
   "skills.frontend.title": "Frontend",
-  "skills.frontend.desc": "JavaScript/TypeScript, React 19, Dart (Flutter)",
+  "skills.frontend.desc": "JavaScript/TypeScript, React 19, Blazor (C#), Dart (Flutter)",
   "skills.devops.title": "Cloud & DevOps",
   "skills.devops.desc": "Docker, Kubernetes, Terraform, Pulumi, Azure, CI/CD",
   "skills.data.title": "Databases & Architecture",
@@ -55,6 +55,8 @@
   "projects.meteor.desc": "Full development of a weather station (Tp3 Amoc). Integration of microcontrollers, communication protocols (MQTT/I2C), and visualization dashboard.",
   "projects.castle.title": "Castle of SFML — 3D Engine & Game",
   "projects.castle.desc": "Developed a 3D rendering engine (Raycaster) and survival game in C# (.NET 6). Implemented BFS pathfinding AI and designed a modular architecture with automated testing (xUnit, CI/CD).",
+  "projects.hackathon.title": "Hackathon Québec International",
+  "projects.hackathon.desc": "Intensive team collaboration to solve a real-world technical problem under pressure (Project Vermac).",
   "projects.repo_link": "View source code (GitHub)",
 
   "activities.title": "Projects & Activities",
