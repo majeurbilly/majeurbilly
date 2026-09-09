@@ -170,12 +170,13 @@ canvas.loaded {
 }
 
 .timeline-date {
-    width: 130px;
-    min-width: 130px;
-    font-weight: bold;
+    width: 140px;
+    min-width: 140px;
+    font-weight: 600;
     color: #3498db;
-    font-size: 0.95rem;
-    margin-top: 0.15rem;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin-top: 0.1rem;
     flex-shrink: 0;
 }
 
@@ -251,6 +252,16 @@ body.dark .timeline-content p {
 
 body.dark .github-link {
     color: #0094ff;
+}
+
+#projects,
+#experience {
+    margin-top: 2.5rem;
+}
+
+#projects > h2,
+#experience > h2 {
+    margin-top: 0;
 }
 
 #projects .timeline-item,
