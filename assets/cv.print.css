@@ -39,25 +39,34 @@ button,
     page-break-inside: avoid;
 }
 
-#aboutme > div {
+#aboutme > div,
+#aboutme .aboutme-layout {
     display: flex !important;
     flex-direction: row-reverse !important;
     align-items: center !important;
-    gap: 14px !important;
+    gap: 18px !important;
 }
 
-#aboutme img {
-    width: 64px !important;
-    height: 64px !important;
+#aboutme img,
+#aboutme .aboutme-photo img {
+    width: 80px !important;
+    height: 80px !important;
     border-radius: 50% !important;
     object-fit: cover !important;
     border: 2px solid #fff !important;
     margin: 0 !important;
+    display: block !important;
 }
 
-#aboutme > div > div:first-of-type {
+#aboutme > div > div:first-of-type,
+#aboutme .aboutme-info {
     flex: 1 !important;
     margin: 0 !important;
+    min-width: 0 !important;
+}
+
+#aboutme .aboutme-photo {
+    flex: 0 0 auto !important;
 }
 
 #aboutme address div:first-child {
@@ -77,11 +86,15 @@ button,
 
 #aboutme address + div,
 #aboutme .contact-list {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    gap: 6px 14px !important;
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+    grid-template-rows: auto auto !important;
+    grid-auto-flow: column !important;
+    column-gap: 20px !important;
+    row-gap: 4px !important;
+    align-items: baseline !important;
+    width: max-content !important;
+    max-width: 100% !important;
 }
 
 #aboutme .contact-item,
