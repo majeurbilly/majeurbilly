@@ -41,6 +41,8 @@ section div > p:last-child {
 
 section#aboutme {
     margin-bottom: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 section#aboutme > div {
@@ -54,14 +56,19 @@ section#aboutme > div > div > div {
     margin-top: 0.25em;
 }
 
+section#aboutme address {
+    margin-bottom: 1rem;
+    display: block;
+}
+
 section#aboutme address + div.contact-list,
 section#aboutme .contact-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.35em 1.25em;
-    margin-top: 0.35em;
+    gap: 0.65em 1.25em;
+    margin-top: 0;
 }
 
 section#aboutme .contact-item {

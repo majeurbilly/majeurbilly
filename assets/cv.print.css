@@ -32,7 +32,7 @@ button,
 #aboutme {
     background-color: #1a4b6b !important;
     color: #ffffff !important;
-    padding: 10px 14px !important;
+    padding: 12px 16px !important;
     border-radius: 6px !important;
     margin-bottom: 28px !important;
     display: block !important;
@@ -71,7 +71,7 @@ button,
 #aboutme address div:last-child {
     font-size: 8.5pt !important;
     opacity: 0.9 !important;
-    margin-bottom: 4px !important;
+    margin-bottom: 8px !important;
     line-height: 1.25 !important;
 }
 
@@ -81,7 +81,7 @@ button,
     flex-direction: row !important;
     flex-wrap: wrap !important;
     align-items: center !important;
-    gap: 4px 14px !important;
+    gap: 6px 14px !important;
 }
 
 #aboutme .contact-item,
