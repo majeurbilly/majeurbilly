@@ -38,7 +38,7 @@
   "skills.languages.title": "Langues",
   "skills.languages.desc": "Français (Maternel), Anglais (Technique)",
   "skills.backend.title": "Backend & Logiciel",
-  "skills.backend.desc": "C#, C++, Python, Go, PHP, Laravel",
+  "skills.backend.desc": "C#, C++, Python, Go, PHP",
   "skills.frontend.title": "Frontend",
   "skills.frontend.desc": "JavaScript/TypeScript, React 19, Blazor (C#), Dart (Flutter)",
   "skills.devops.title": "Cloud & DevOps",
