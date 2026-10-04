@@ -90,7 +90,7 @@
                 <div class="skills-values" data-i18n="skills.frontend.desc">TypeScript, React, Blazor, Dart (Flutter)</div>
 
                 <div class="skills-category" data-i18n="skills.devops.title">Cloud & DevOps</div>
-                <div class="skills-values" data-i18n="skills.devops.desc">Docker, Kubernetes, Terraform, Pulumi, Azure, Git</div>
+                <div class="skills-values" data-i18n="skills.devops.desc">Docker, Kubernetes / k3s, Pulumi, GitOps / deployment automation, Terraform, Azure, Git</div>
 
                 <div class="skills-category" data-i18n="skills.data.title">Databases & Architecture</div>
                 <div class="skills-values" data-i18n="skills.data.desc">PostgreSQL, SQL, NoSQL, REST API, MQTT, SignalR</div>
@@ -102,6 +102,15 @@
 
         <section id="projects" class="timeline">
             <h2 data-i18n="projects.title">Projects & Achievements</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2026</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="projects.stringempty.title">StringEmpty (Wendigo & Homelab)</h4>
+                    <p data-i18n="projects.stringempty.desc">Private project (source code not publicly available) illustrating a complete production architecture: a real-time party game (Werewolf without a Game Master) with an authoritative Go server (WebSockets, Redis, PostgreSQL) and a React 19 / TypeScript / Vite client packaged into a single binary; a 2-node GitOps-style homelab (build server and k3s hosting server); orchestration and automation with Kubernetes (k3s), Pulumi (infrastructure as code for Authentik OIDC authentication and Cloudflare tunnels), Kustomize manifests, and a satellite ecosystem running n8n in parallel within isolated namespaces.</p>
+                    <p class="project-tech" data-i18n="projects.stringempty.tech">Go, React, TypeScript, WebSockets, Docker, Kubernetes (k3s), Pulumi, OIDC, Redis, PostgreSQL, GitHub Actions</p>
+                </div>
+            </div>
 
             <div class="timeline-item">
                 <div class="timeline-date">2026</div>

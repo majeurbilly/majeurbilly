@@ -219,6 +219,13 @@ h2 {
     font-family: inherit !important;
 }
 
+.timeline-content .project-tech {
+    margin-top: 2px !important;
+    color: #555 !important;
+    font-size: 8.5pt !important;
+    line-height: 1.25 !important;
+}
+
 .timeline-content li {
     margin-bottom: 1px !important;
     list-style: none !important;
