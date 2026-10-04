@@ -246,13 +246,6 @@ canvas.loaded {
     line-height: 1.55;
 }
 
-.timeline-content .project-tech {
-    margin-top: 0.45em;
-    font-size: 0.92rem;
-    color: #777;
-    line-height: 1.45;
-}
-
 .github-link {
     font-size: 0.9rem;
     color: #3498db;
@@ -281,10 +274,6 @@ body.dark .timeline-content ul {
 
 body.dark .timeline-content p {
     color: #ccc;
-}
-
-body.dark .timeline-content .project-tech {
-    color: #9aa0a6;
 }
 
 body.dark .github-link {
