@@ -49,8 +49,8 @@
   "skills.hardware.desc": "Microcontrollers (ESP32, Arduino), Raspberry Pi, K8s Cluster",
 
   "projects.title": "Projects & Achievements",
-  "projects.stringempty.title": "StringEmpty (Wendigo & Homelab)",
-  "projects.stringempty.desc": "Private project (source code not publicly available) illustrating a complete production architecture: a real-time party game (Werewolf without a Game Master) with an authoritative Go server (WebSockets, Redis, PostgreSQL) and a React 19 / TypeScript / Vite client packaged into a single binary; a 2-node GitOps-style homelab (build server and k3s hosting server); orchestration and automation with Kubernetes (k3s), Pulumi (infrastructure as code for Authentik OIDC authentication and Cloudflare tunnels), Kustomize manifests, and a satellite ecosystem running n8n in parallel within isolated namespaces.",
+  "projects.stringempty.title": "StringEmpty",
+  "projects.stringempty.desc": "Design of a production monorepo centralizing my production projects, including Wendigo, an interactive game platform. The project is built on a Homelab GitOps architecture where the repository is the single source of truth. A build server, through the CI/CD pipeline, automatically compiles the code and continuously deploys updates to a second server handling Kubernetes orchestration, ensuring full end-to-end automation.",
   "projects.stringempty.tech": "Go, React, TypeScript, WebSockets, Docker, Kubernetes (k3s), Pulumi, OIDC, Redis, PostgreSQL, GitHub Actions",
   "projects.crystal.title": "Crystal ERP",
   "projects.crystal.desc": "Full Stack development of an ERP management application (React 19, TypeScript, ASP.NET Core 9, PostgreSQL). Configured infrastructure using Docker, Nginx, and Azure Pipelines. Designed secure API endpoints (JWT/CASL) and developed automated logic for real-time attendance tracking.",
