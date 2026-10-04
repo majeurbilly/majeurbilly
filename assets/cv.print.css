@@ -178,6 +178,37 @@ h2 {
     break-inside: avoid;
 }
 
+#experience .experience-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 14px !important;
+    row-gap: 0 !important;
+    align-items: start !important;
+}
+
+#experience .experience-row .timeline-item {
+    flex-direction: column !important;
+    gap: 1px !important;
+    margin-bottom: 0 !important;
+    min-width: 0 !important;
+}
+
+#experience .experience-row .timeline-date {
+    flex: none !important;
+    width: auto !important;
+    font-size: 9pt !important;
+    margin-bottom: 1px !important;
+}
+
+#experience .experience-row .timeline-content h4 {
+    font-size: 9pt !important;
+}
+
+#experience .experience-row .timeline-content h5,
+#experience .experience-row .timeline-content p {
+    font-size: 8pt !important;
+}
+
 .timeline-date {
     flex: 0 0 130px !important;
     width: 130px !important;
